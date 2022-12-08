@@ -68,6 +68,7 @@ This base box is designed to be a good starting point for an Arch Linux-based de
 - `git`, `subversion`, `mercurial`
 - `man-db`, `man-pages`, `texinfo`
 - `bash-completion`, `zsh`, oh-my-zsh
+- `pikaur`, `pacaur`, `yay`
 
 ## Contributions
 

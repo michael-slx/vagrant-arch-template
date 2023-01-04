@@ -33,8 +33,12 @@ vagrant:vagrant
 eof
 
 git clone https://github.com/ohmyzsh/ohmyzsh.git /home/vagrant/.oh-my-zsh
-chown -R vagrant:vagrant /home/vagrant/.oh-my-zsh
 cp $FILES_DIR/base/zshrc /home/vagrant/.zshrc
+chown -R vagrant:vagrant /home/vagrant/.oh-my-zsh /home/vagrant/.zshrc
+
+cp -R /home/vagrant/.oh-my-zsh /root/.oh-my-zsh
+cp $FILES_DIR/base/zshrc /root/.zshrc
+chown -R root:root /root/.oh-my-zsh /root/.zshrc
 
 mkdir -p /home/vagrant/.ssh
 cat $FILES_DIR/base/vagrant.pub >> /home/vagrant/.ssh/authorized_keys

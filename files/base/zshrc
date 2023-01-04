@@ -16,6 +16,7 @@ plugins=(
     archlinux
     git
     sudo
+    systemd
     z
     zsh-interactive-cd
 )

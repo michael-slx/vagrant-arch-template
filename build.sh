@@ -38,6 +38,7 @@ trap cleanup EXIT
 build_date="$(date +%+4Y-%m-%d)"
 
 cd "$WORK_DIR"
+env PACKER_CACHE_DIR="$SCRIPT_DIR/.packer_cache" \
 packer build \
     -var="build_name="$BUILD_NAME"" \
     -var="build_date="$build_date"" \

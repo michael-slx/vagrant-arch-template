@@ -73,6 +73,13 @@ mkinitcpio -P linux
 [[ -f "/boot/EFI/BOOT/BOOTX64.EFI" ]] || exit 5
 efibootmgr --create --disk /dev/sda --part 1 --loader '/EFI/BOOT/BOOTX64.EFI' --label "Arch Linux"
 
+su - vagrant \
+    "${SCRIPTS_DIR}/base/aur-install.sh"
+su - vagrant \
+    "${SCRIPTS_DIR}/user.sh" \
+    "${SCRIPTS_DIR}" \
+    "${FILES_DIR}"
+
 UNUSED_PKGS=$(pacman -Qdtq || true)
 if [[ ! -z "$UNUSED_PKGS" ]]; then
   pacman -Rs --noconfirm $UNUSED_PKGS || true

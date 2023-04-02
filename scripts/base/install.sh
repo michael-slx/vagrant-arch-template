@@ -46,14 +46,6 @@ arch-chroot /mnt \
     SCRIPTS_DIR="${INNER_SCRIPTS_DIR}" \
     FILES_DIR="${INNER_FILES_DIR}" \
     "${INNER_SCRIPTS_DIR}/base/chroot.sh"
-arch-chroot /mnt \
-    su - vagrant \
-    "${INNER_SCRIPTS_DIR}/base/aur-install.sh"
-arch-chroot /mnt \
-    su - vagrant \
-    "${INNER_SCRIPTS_DIR}/user.sh" \
-    "${INNER_SCRIPTS_DIR}" \
-    "${INNER_FILES_DIR}"
 
 ln -sf "/run/systemd/resolve/stub-resolv.conf" /mnt/etc/resolv.conf
 

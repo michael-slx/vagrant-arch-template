@@ -47,7 +47,7 @@ packer build \
     -var="boot_wait_time=$BOOT_WAIT_TIME_SECS" \
     -var="image_cpus=$IMAGE_CPUS" \
     -var="image_memory=$IMAGE_MEMORY_MB" \
-    "$SCRIPT_DIR"
+    "$SCRIPT_DIR/packer/"
 
 crc_dir="$WORK_DIR/crc"
 mkdir -p "$crc_dir"

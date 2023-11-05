@@ -2,11 +2,11 @@ build {
   sources = ["sources.virtualbox-iso.arch64"]
 
   provisioner "file" {
-    source = "${path.root}/files"
+    source = "${path.root}/../files"
     destination = "/tmp/upload-files"
   }
   provisioner "file" {
-    source = "${path.root}/scripts"
+    source = "${path.root}/../scripts"
     destination = "/tmp/upload-scripts"
   }
 

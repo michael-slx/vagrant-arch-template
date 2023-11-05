@@ -39,7 +39,10 @@ build_date="$(date +%+4Y-%m-%d)"
 
 cd "$WORK_DIR"
 env PACKER_CACHE_DIR="$SCRIPT_DIR/.packer_cache" \
-packer build \
+    packer init -upgrade \
+    "$SCRIPT_DIR/packer/plugins.pkr.hcl"
+env PACKER_CACHE_DIR="$SCRIPT_DIR/.packer_cache" \
+    packer build \
     -var="build_name="$BUILD_NAME"" \
     -var="build_date="$build_date"" \
     -var="build_cpus=$BUILD_CPUS" \

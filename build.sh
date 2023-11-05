@@ -15,7 +15,7 @@ IMAGE_MEMORY_MB=1024
 : "${BUILD_CPUS:=8}"
 : "${BUILD_MEMORY_MB:=8192}"
 
-: "${BOOT_WAIT_TIME_SECS:=60}"
+: "${BOOT_WAIT_TIME_SECS:=120}"
 
 ########################
 

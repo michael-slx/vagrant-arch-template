@@ -11,6 +11,7 @@ source "virtualbox-iso" "arch64" {
   nested_virt = true
 
   gfx_controller = "none"
+  headless = true
 
   disk_size = 65536
   hard_drive_interface = "sata"

@@ -34,7 +34,7 @@ source "virtualbox-iso" "arch64" {
     ["modifyvm", "{{.Name}}", "--apic=on"],
     ["modifyvm", "{{.Name}}", "--x2apic=on"],
     ["modifyvm", "{{.Name}}", "--ioapic=on"],
-    ["modifyvm", "{{.Name}}", "--bios-apic=x2apic"],
+    ["modifyvm", "{{.Name}}", "--bios-apic=apic"],
     ["modifyvm", "{{.Name}}", "--hwvirtex=on"],
     ["modifyvm", "{{.Name}}", "--nested-hw-virt=on"],
     ["modifyvm", "{{.Name}}", "--paravirt-provider=default"],

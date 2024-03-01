@@ -5,7 +5,7 @@ set -e
 
 ### BUILD PROPERTIES ###
 
-BUILD_NAME="arch64-develop"
+BUILD_NAME="arch-develop"
 
 IMAGE_CPUS=1
 IMAGE_MEMORY_MB=1024

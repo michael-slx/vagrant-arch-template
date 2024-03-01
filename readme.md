@@ -5,7 +5,7 @@
 This repository contains the build system for a base (Arch Linux)[https://archlinux.org/]-based development virtual machine image.
 
 This VM can either be used directly or can be customized to suit your needs.
-The base VM built by this project is available in the Vagrant Cloud as **`michael-slx/arch64-develop`**.
+The base VM built by this project is available in the Vagrant Cloud as **`michael-slx/arch-develop`**.
 
 ## Using the bare VM
 
@@ -14,7 +14,7 @@ To run the VM, you'll need **[Vagrant](https://www.vagrantup.com/)** and **[Virt
 Run the following command To create a new Vagrantfile: 
 
 ```bash
-$ vagrant init michael-slx/arch64-develop
+$ vagrant init michael-slx/arch-develop
 ```
 
 If you're new to Vagrant, check out the [Vagrant documentation](https://developer.hashicorp.com/vagrant).

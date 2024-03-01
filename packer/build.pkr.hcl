@@ -23,7 +23,8 @@ build {
 
   post-processors {  
     post-processor "vagrant" {
-      output = "output/${var.build_name}_{{ .Provider }}_${var.build_date}.box"
+      architecture = "amd64"
+      output = "output/${var.build_name}_{{ .Provider }}_{{ .Architecture }}_${var.build_date}.box"
     }
   }  
 }

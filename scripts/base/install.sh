@@ -13,7 +13,7 @@ PACKAGES=(
     virtualbox-guest-utils-nox
     neovim nano wget curl sudo git subversion mercurial
     man-db man-pages texinfo
-    zsh bash bash-completion
+    zsh bash bash-completion fzf
 )
 
 timedatectl set-ntp 1
